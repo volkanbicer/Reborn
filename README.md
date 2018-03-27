@@ -28,23 +28,23 @@ pod 'Reborn'
 ## Usage
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-// Override point for customization after application launch.
-setupReborn()
-return true
+    // Override point for customization after application launch.
+    setupReborn()
+    return true
 }
 
 func setupReborn(){
-// Alert will be fired when the first time 1.3 version installed
-let reborn = Reborn(at: "1.3")
-reborn.isTest = true
-reborn.delegate = self
-reborn.check()
+    // Alert will be fired when the first time 1.3 version installed
+    let reborn = Reborn(at: "1.3")
+    reborn.isTest = true
+    reborn.delegate = self
+    reborn.check()
 }
 
 extension AppDelegate: RebornDelegate{
-func rebornDidComplete() {
-print("Reborn did triggered!")
-}
+    func rebornDidComplete() {
+        print("Reborn did triggered!")
+    }
 }
 ```
 ## Author
