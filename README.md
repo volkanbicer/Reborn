@@ -4,6 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/Reborn.svg?style=flat)](http://cocoapods.org/pods/Reborn)
 [![License](https://img.shields.io/cocoapods/l/Reborn.svg?style=flat)](http://cocoapods.org/pods/Reborn)
 [![Platform](https://img.shields.io/cocoapods/p/Reborn.svg?style=flat)](http://cocoapods.org/pods/Reborn)
+![Language](https://img.shields.io/badge/languages-swift-orange.svg)
+[![Readme Score](http://readme-score-api.herokuapp.com/score.svg?url=https://github.com/vbicer/realmstore)](http://clayallsopp.github.io/readme-score?url=https://github.com/vbicer/realmstore)
+
 
 ## About
 **Reborn** checks a user's currently installed version of your iOS app against the version that is currently configured.
