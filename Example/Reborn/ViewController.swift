@@ -12,13 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(rebornDidTrigger(notification:)),
+                                               name: .rebornDidTrigger,
+                                               object: nil)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @objc func rebornDidTrigger(notification: Notification){
+        let alert = UIAlertController(title: "Alert", message: "You can only see me once for this version!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
+}
 
+extension Notification.Name{
+    static let rebornDidTrigger = Notification.Name("RebornDidTrigger")
 }
 

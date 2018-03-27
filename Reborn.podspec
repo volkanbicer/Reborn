@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Reborn'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of Reborn.'
+  s.summary          = 'Installed version checker'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Reborn checks a user's currently installed version of your iOS app against the version that is currently configured.
+
+If a both versions match and if it's the first time then fire and event to inform configured version installed.
                        DESC
 
   s.homepage         = 'https://github.com/vbicer/Reborn'
